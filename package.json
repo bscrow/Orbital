@@ -2,8 +2,12 @@
   "name": "orbital",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bscrow.github.io/Orbital/",
   "dependencies": {
+    "d3": "^5.9.2",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
+    "react-d3-graph": "^2.0.2",
     "react-d3-tree": "^1.13.0",
     "react-dom": "^16.8.6",
     "react-modal": "^3.8.1",
@@ -12,6 +16,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
