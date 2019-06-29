@@ -42,7 +42,7 @@ class FASS extends React.Component {
 
     onClickNode = id => {
         window.open(`https://nusmods.com/modules/${id}`, id);
-        this.moreVerboseNodeSVG(id);
+        // this.moreVerboseNodeSVG(id);
     };
      
     onRightClickNode = id => {
@@ -55,14 +55,6 @@ class FASS extends React.Component {
 
     render() {
 
-        const graphProps = {
-            id: "graph",
-            data: this.state.data,
-            config: this.state.config,
-            onClickNode: this.onClickNode,
-            onRightClickNode: this.onRightClickNode,
-            onClickGraph: this.onClickGraph,
-        };
 
         return (
             this.drawUI()
