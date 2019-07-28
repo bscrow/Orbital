@@ -1,7 +1,27 @@
 body {
-  background: url('../../Images/art-art-materials-bright-743986.jpg');
+  /*background: url('../../Images/art-art-materials-bright-743986.jpg');
+  background-size: cover;*/
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+.Home {
+  /*background: url('../../Images/art-art-materials-bright-743986.jpg');*/
+  background: url('../../Images/astro-astronomy-background.jpg');
   background-size: cover;
-  margin: 0;
+}
+
+.LoadingPage {
+ background: rgba(0, 0, 0, 0.5);
+ height: 100%;
+ width: 100%;
+ position: absolute;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
 ul {
@@ -15,6 +35,10 @@ li {
 
 h2 {
   color: darkblue;
+}
+
+td {
+  vertical-align: middle;
 }
 
 .HomePage {
@@ -38,9 +62,10 @@ h2 {
   grid-row: 1 / 2;
   margin-bottom: 20px;
   text-align: left;
-  border: 2px solid whitesmoke;
+  border: 8px solid whitesmoke;
   background-color: lightgrey;
   padding-left: 20px;
+  border-radius: 8px;
 }
 
 .FASShp {
@@ -103,141 +128,91 @@ h2 {
 }
 
 .NodeBox {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.added-hexagon {
-  position: relative;
-  width: 80px; 
-  height: 46.19px;
-  background-color: #f9d237;
-  margin: 30px 0;
-  box-shadow: 0 0 20px rgba(216,1,1,0.75);
-  border-left: solid 5px #660f00;
-  border-right: solid 5px #660f00;
-  cursor: pointer;
-}
-
-.added-hexagon:before,
-.added-hexagon:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  width: 56.57px;
-  height: 56.57px;
-  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-  -ms-transform: scaleY(0.5774) rotate(-45deg);
-  transform: scaleY(0.5774) rotate(-45deg);
-  background-color: inherit;
-  left: 7.0711px;
-  box-shadow: 0 0 20px rgba(216,1,1,0.75);
-}
-
-.added-hexagon:before {
-  top: -32px;
-  border-top: solid 7.0711px #660f00;
-  border-right: solid 7.0711px #660f00;
-}
-
-.added-hexagon:after {
-  bottom: -32px;
-  border-bottom: solid 7.0711px #660f00;
-  border-left: solid 7.0711px #660f00;
-}
-
-/*cover up extra shadows*/
-.added-hexagon span {
-  display: block;
-  position: absolute;
-  top:2.8867513459481287px;
-  left: 0px;
-  width: 79px;
-  height:40.4145px;
-  z-index: 2;
-  background: inherit;
-}
-
-.hexagon {
-  position: relative;
-  width: 80px; 
-  height: 46.19px;
-  background-color: #f9d237;
-  margin: 30px 0;
-  border-left: solid 5px #660f00;
-  border-right: solid 5px #660f00;
-  cursor: pointer;
-}
-
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  width: 56.57px;
-  height: 56.57px;
-  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-  -ms-transform: scaleY(0.5774) rotate(-45deg);
-  transform: scaleY(0.5774) rotate(-45deg);
-  background-color: inherit;
-  left: 7.0711px;
-}
-
-.hexagon:before {
-  top: -32px;
-  border-top: solid 7.0711px #660f00;
-  border-right: solid 7.0711px #660f00;
-}
-
-.hexagon:after {
-  bottom: -32px;
-  border-bottom: solid 7.0711px #660f00;
-  border-left: solid 7.0711px #660f00;
-}
-
-/*cover up extra shadows*/
-.hexagon span {
-  display: block;
-  position: absolute;
-  top:2.8867513459481287px;
-  left: 0px;
-  width: 79px;
-  height:40.4145px;
-  z-index: 2;
-  background: inherit;
-}
-
-.SOCFinal {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr min-content;
-  grid-template-rows: min-content 1fr auto;
-  grid-template-areas: 
-    "title title title title"
-    "modules modules modules timeline"
-    "buttons buttons buttons buttons";
-  margin-left: 25px;
-  margin-right: 25px;
+  margin: 0;
   height: 100%;
+  width: 100%;
+  text-align: center;
+  opacity: 0.99;
+}
+
+.textBoxLocked {
+ font-size: 10px;
+ height: 100%;
+ width: 100%;
+ position: absolute;
+ margin-top: 7px;
+}
+
+.textBox {
+  font-size: 10px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 3px;
+}
+
+.textContent {
+  vertical-align: middle;
+  margin-top: 22px;
+  margin-left: -3px;
+  font-weight: bold;
+}
+
+.Image-before {
+  align-content: center;
+  height: 90px;
+  width: 90px;
+  margin-left: -4px;
+  margin-top: -8.5px;
+}
+
+.Image-after {
+  align-content: center;
+  height: 90px;
+  width: 90px;
+  margin-left: -4px;
+  margin-top: -8.5px;
+}
+
+.Image-after2 {
+  align-content: center;
+  width: 65px;
+  height: 65px;
+  margin-left: -2.75px;
+  margin-top: -3px;
+}
+
+.Image-locked {
+  align-content: center;
+  width: 90px;
+  height: 90px;
+  opacity: 0.6;
+  margin-left: -5px;
+  margin-top: -7px;
+}
+
+.Timeline {
+  background: url('../../Images/astro-astronomy-background.jpg');
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr;
+  margin: 0;
+  height: 100vh;
+  justify-items: center;
 }
 
 .FOSFinal {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr min-content;
-  grid-template-rows: min-content 1fr auto;
-  grid-template-areas: 
-    "title title title title"
-    "modules modules modules timeline"
-    "buttons buttons buttons buttons";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr min-content;
+  grid-template-rows: min-content min-content 1fr;
   margin-left: 25px;
   margin-right: 25px;
   height: 100%;
 }
 
-.Sidebar {
-  background: rgba(0,0,0, 0.5);
-}
-
-.SidebarMenu {
+/*.SidebarMenu {
   margin: 10px;
 }
 
@@ -255,21 +230,37 @@ h2 {
   grid-template-columns: min-content min-content min-content;
   grid-template-rows: min-content;
   grid-area: buttons;
-}
+}*/
 
 .Title {
-  grid-area: title;
+  padding: 8px;
+  grid-column: 1 / 6;
+  grid-row: 1;
+  text-align: center;
+  width: 100%;
+  height: 80%;
+  background: rgb(235, 235, 235);
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.Topbar {
+  grid-column: 1 / 6;
+  grid-row: 1;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .MODGrid {
-  display: inline-grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: min-content;
-  grid-area: modules;
-  background: lightblue;
-  margin-right: 20px;
-  text-align: center;
-  justify-items: center;
+  grid-column: 1 / 6;
+  grid-row: 2;
+  /*background: rgb(250, 250, 250, 0.5);*/
+  background: rgba(0,0,0, 0.25);
+  margin: 0;
+  border: 8px solid rgba(255,255,255, 0.15);
+  border-radius: 8px;
+  width: fit-content;
+  height: fit-content;
 }
 
 .DepartmentComponent {
@@ -299,36 +290,21 @@ h2 {
   grid-row-gap: 20px;
 }
 
-.Timeline {
-  border: 1px solid black;
-  border-collapse: collapse;
+.cellBefore {
+  color: rgb(150, 150, 150);
+  font-size: 13px;
 }
 
-.table {
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid black;
+.cellAfter {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
 }
 
-tr {
-  border: 1px solid black;
-  background: white;
-  text-align: center;
-}
-
-th {
-  border: 1px solid black;
-}
-
-td {
-  border: 1px solid black;
-}
-
-.cell {
-  width:100px;
-  height:22px;
-  margin-top: 3px;
-  text-align: center;
+.cellSp {
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 .modal-bg {
@@ -341,37 +317,40 @@ td {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2;
 }
 
 .modal-content {
-  width: 500px;
-  height: 300px;
-  background-color: white;
   text-align: center;
   border-radius: 4px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  z-index: 2;
-}
-
-.modal-content-2 {
-  width: 500px;
-  height: 300px;
-  background-color: white;
-  text-align: center;
-  border-radius: 4px;
-  justify-content: center;
-  z-index: inherit;
 }
 
 .modal-msg {
   padding: 25px;
   grid-column: 1 / 3;
-  z-index: 2;
 }
 
-.tooltip-content {
-  text-align: left;
+.modalButtons {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.Info {
+  border: 1px solid lightgray;
+}
+
+.modalMoreInfo {
+  height: 100%;
+  display: flex;
+  text-align: center;
+  background: dimgray;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
 }

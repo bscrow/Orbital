@@ -5,7 +5,7 @@ import ReactTooltip from 'react-tooltip';
 class Node extends React.Component {
     constructor(props) {
       super()
-      this.state = { moduleID: props.id, equivalent: props.equivalent, require: props.require, added: false, showModal:false, showEditForm: false }
+      this.state = { moduleID: props.info.id, equivalent: props.info.equivalent, require: props.info.require, added: false, showModal:false, showEditForm: false }
       this.handleClickForAddButton = this.handleClickForAddButton.bind(this)
       this.handleClickForEditButton = this.handleClickForEditButton.bind(this)
       this.showModal = this.showModal.bind(this)
@@ -112,7 +112,7 @@ class Node extends React.Component {
 
     //Event handler for tooltip (when hexagon is moused-Over)
     getTooltipContent(dataTip) {
-      const listItems = this.props.require.map(req => {
+      const listItems = this.state.require.map(req => {
         return <li>{req}</li>
       });
 

@@ -1,7 +1,7 @@
 import React from 'react';
 // import Timeline from '../Timeline/Timeline';
 import { Graph } from 'react-d3-graph';
-import { testData, testSOCData, myConfig } from '../Graph/ModuleGraph3';
+import { testData, testSOCData, myConfig } from '../Graph/GraphConfig';
 
 class FASS extends React.Component {
     // constructor(props) {

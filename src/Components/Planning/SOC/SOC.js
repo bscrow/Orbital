@@ -7,7 +7,7 @@ class SOC extends React.Component {
     constructor() {
         super()
         this.state = { sidebarOpen: false }
-        this.drawUI = this.drawUI.bind(this)
+        this.drawUI = this.drawUI.bind(this);
     }
 
     drawUI() {

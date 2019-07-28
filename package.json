@@ -2,18 +2,26 @@
   "name": "orbital",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:5000/",
   "homepage": "https://bscrow.github.io/Orbital/",
   "dependencies": {
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
     "d3": "^5.9.2",
+    "dom-to-image": "^2.6.0",
+    "file-saver": "^2.0.2",
+    "firebase": "^6.2.4",
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
+    "react-autocomplete": "^1.8.1",
     "react-d3-graph": "^2.0.2",
     "react-d3-tree": "^1.13.0",
     "react-dom": "^16.8.6",
     "react-modal": "^3.8.1",
     "react-scripts": "3.0.1",
     "react-sidebar": "^3.0.2",
-    "react-tooltip": "^3.10.0"
+    "react-tooltip": "^3.10.0",
+    "reactstrap": "^8.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

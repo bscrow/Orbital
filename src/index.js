@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './Components/Homepage/App';
+import './Components/Homepage/App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import Home from './Components/Homepage/Home';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Home />, document.getElementById('root'));
+//ReactDOM.render(<NOC />, document.getElementById('root'));
